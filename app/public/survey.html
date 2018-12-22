@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Friend Finder Survey</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+<div id="surveyContainer">
+    <div class="jumbotron p-3 mb-2 bg-light text-black" id="heading">
+         <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="required">
+        </div>
+        <div class="form-group">
+            <label for="photo">Link to photo image</label>
+            <input type="text" class="form-control" id="photo" placeholder="required">
+        </div>
+        <div class="form-group">
+            <label for="question1">You consider yourself introverted</label>
+            <select class="form-control" class="dropdown" id="dropdown1">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="question2">YouTube is your favorite website</label>
+            <select class="form-control" class="dropdown" id="dropdown2">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="question3">You feel most at home in your swamp</label>
+            <select class="form-control" class="dropdown" id="dropdown3">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="question4">Fortnite is a great game</label>
+            <select class="form-control" class="dropdown" id="dropdown4">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="question5">Metal is your favorite genre of music</label>
+            <select class="form-control" class="dropdown" id="dropdown5">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="question6">Your best friend has four hooves and speaks</label>
+            <select class="form-control" class="dropdown" id="dropdown6">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="question7">You enjoy rescuing princesses from a castle in the highest room in the tallest tower</label>
+            <select class="form-control" class="dropdown" id="dropdown7">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="question8">You're an all star</label>
+            <select class="form-control" class="dropdown" id="dropdown8">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="question9">Toy Story 3 was overrated</label>
+            <select class="form-control" class="dropdown" id="dropdown9">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="question10">Dreamworks is better than Pixar</label>
+            <select class="form-control" class="dropdown" id="dropdown10">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg" id="submit">Submit</button>
+    </div>
+</div> 
+
+<!--The modal would be on the page, but it was invisible. After much deleting and recoding I used a workaround with show/hide to simulate a modal -->
+<!--   <div id="results-modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+               Modal content
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h2 class="modal-title"><strong>Your best match is:</strong></h2>
+                </div>
+                <div class="modal-body">
+                  <h2 id="matchName"></h2>
+                  <img id="matchPhoto" src="https://sitechecker.pro/wp-content/uploads/2017/12/404.png" alt="">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div> --->
+    <div class="jumbotron" id="modalAttempt" style="display: none;">
+        <br><br>
+        <div class="text-center">
+            <h1class="display-4">Your best match is:</h1>
+            <h2 id="matchName"></h2>
+        </div><br><br>
+        <div class="text-center">
+            <img id="matchPhoto" src="https://sitechecker.pro/wp-content/uploads/2017/12/404.png" alt="">
+        </div><br><br>
+        <div class="text-center">
+            <button type="button" id="closeWindow" class="btn btn-primary">Close Window</button>
+        </div><br><br>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<style>
+#heading {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 50px;
+}
+.form-group {
+    width: 200px;
+    margin-left: 40px;
+}
+#submit {
+    margin-left: 40px;
+    margin-top: 60px;
+}
+#modalAttempt {
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+}
+img{
+    width:100%;
+    max-width:400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+</style>
+<script type="text/javascript">
+    $("#submit").on("click", function(event) {
+      event.preventDefault();
+      var newFriend = {
+        name: $("#name").val().trim(),
+        photo: $("#photo").val().trim(),
+    	scores: [$("#dropdown1").val(), $("#dropdown2").val(), $("#dropdown3").val(), $("#dropdown4").val(), $("#dropdown5").val(), $("#dropdown6").val(), $("#dropdown7").val(), $("#dropdown8").val(), $("#dropdown9").val(), $("#dropdown10").val()]
+      };
+      console.log(newFriend)
+
+      $.post("/api/friends", newFriend, function(data) {
+          console.log("name is " + data.name)
+          console.log(data.photo)
+          $("#matchName").text(data.name);
+          $('#matchPhoto').attr("src", data.photo);
+        //   modal call that didn't work
+        //   $("#results-modal").modal();
+          // Clear the form when submitting
+          $("#surveyContainer").hide();
+          $("#modalAttempt").show();
+          $("#name").val("");
+          $("#photo").val("");
+          $("#dropdown1").val("");
+          $("#dropdown2").val("");
+          $("#dropdown3").val("");
+          $("#dropdown4").val("");
+          $("#dropdown5").val("");
+          $("#dropdown6").val("");
+          $("#dropdown7").val("");
+          $("#dropdown8").val("");
+          $("#dropdown9").val("");
+          $("#dropdown10").val("");
+        });
+    });
+    $("#closeWindow").on("click", function (event) {
+        $("#modalAttempt").hide();
+        $("#surveyContainer").show();
+    });
+</script>
+</body>
+</html>
